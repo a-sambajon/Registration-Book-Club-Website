@@ -1,10 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <link rel="stylesheet" href="style.css">
 
-</body>
+        <title>Book Program Discussion</title>
+    </head>
+
+    <body>  
+        <!--Navbar-->
+        <div class="w3-top">
+            <div class="nav_bar w3-white w3-wide w3-padding w3-card">
+                <!--Empty place holder for the logo-->
+                <a href="#home" class="nav_bar-item w3-button"><b>BDP</b> Book Program Discussion</a>
+                <!--Float links to the right-->
+                <div class="w3-right w3-hide-small">
+                    <a href="#about" class="nav_bar-item w3-button"><b>ABOUT</b></a>
+                    <a href="#news" class="nav_bar-item w3-button"><b>NEWS</b></a>
+                    <a href="#contact" class="nav_bar-item w3-button"><b>CONTACT</b></a>
+
+                    <!--Float to the very right. Different background-->
+                    <a href="#profile" class="nav_bar-item w3-button" style="background: yellow;"><b>PROFILE</b></a>
+                </div> 
+            </div>
+        </div>
+        
+
+
+
+        <!-- Header -->
+        <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+            <img class="w3-image" src="https://tinyurl.com/4p88aa6v" alt="Supprting Image" width="1500" height="800">
+            <div class="w3-display-middle w3-margin-top w3-center">
+                <h1 class="w3-xxlarge w3-text-white">
+                    <span class="w3-padding w3-black w3-opacity-min"><b>Book Program Disccusion</b></span> 
+                    <span class="w3-hide-small w3-text-light-grey">Architects</span>
+                </h1>
+            </div>
+        </header>
+
+        <!--Page content-->
+        <div class="w3-content w3-padding" style="max-width:1564px">
+
+            <!--About section-->
+            <div class="w3-container w3-padding-32" id="about">
+                <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">ABOUT</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+
+            <!--News section-->
+            <div class="w3-container w3-padding-32" id="news">
+                <h3>NEWS</h3>
+            </div>
+            
+            <div class="w3-row-padding w3-grayscale">
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                  <img src="tai.jpg" alt="John" style="width:100%">
+                  <h3>John Doe</h3>
+                  <p class="w3-opacity">CEO & Founder</p>
+                  <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                  <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                  <img src="tai.jpg" alt="Jane" style="width:100%">
+                  <h3>Jane Doe</h3>
+                  <p class="w3-opacity">Architect</p>
+                  <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                  <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                  <img src="tai.jpg" alt="Mike" style="width:100%">
+                  <h3>Mike Ross</h3>
+                  <p class="w3-opacity">Architect</p>
+                  <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                  <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                </div>
+            </div>
+
+          <!-- Contact Section -->
+        <div class="w3-container w3-padding-32" id="contact">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+            <p>
+                Lets get in touch and talk about your next project.<br>
+                <br>
+                Opening Hours:<br>
+                <br>
+                Monday to Friday, 9.00am - 5.00pm<br>
+                <br>
+                We also have an after-hours returns slot for Christchurch groups who are unable to drop books back during business hours. <br>
+                <br>
+                Email: bds@bds.org.nz<br>
+                Ph: 03 365 6210<br>
+                <br>
+                425 Colombo Street, Sydenham, Christchurch 8023<br>
+                PO Box 7126, Sydenham, Christchurch 8240, New Zealand<br>
+                <br>
+                Get Directions (opens Google Maps)
+            </p>
+
+            <form action="/action_page.php" target="_blank">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+            <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+            <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+            <button class="w3-button w3-black w3-section" type="submit">
+                <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+            </form>
+        </div>
+        
+        
+    </div>
+        <footer class="w3-center w3-black w3-padding-16">
+            <p><b>Book Program Discussion</b> &#169;COPYRIGHT 2021</p>
+
+            <!--Subscribe List-->
+        </footer>
+        
+    </body>
+
 </html>
