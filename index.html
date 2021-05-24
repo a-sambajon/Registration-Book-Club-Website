@@ -1,181 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, intial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, intial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
 
-        <title>Book Program Discussion</title>
-    </head>
+    <title>Book Program Discussion</title>
+  </head>
 
-    <body>  
-        <!--Navbar-->
-        <div class="top">
-            <div class="nav-bar white wide padding card">
-                <!--Empty place holder for the logo-->
-                <a href="#home" class="nav-bar-item button"><b>BDP</b> Book Program Discussion</a>
-                <!--Float links to the right-->
-                <div class="right">
-                    <a href="#about" class="nav-bar-item button"><b>ABOUT</b></a>
-                    <a href="#news" class="nav-bar-item button"><b>NEWS</b></a>
-                    <a href="#contact" class="nav-bar-item button"><b>CONTACT</b></a>
+  <body>
+    <!--Navbar-->
+    <div class="top">
+      <div class="nav-bar white wide padding card">
+        <!--Empty place holder for the logo-->
+        <a href="#home" class="nav-bar-item button"
+          ><b>BDP</b> Book Program Discussion</a
+        >
+        <!--Float links to the right-->
+        <div class="right">
+          <a href="#about" class="nav-bar-item button"><b>ABOUT</b></a>
+          <a href="#news" class="nav-bar-item button"><b>NEWS</b></a>
+          <a href="#contact" class="nav-bar-item button"><b>CONTACT</b></a>
 
-                    <!--Float to the very right. Different background-->
-                    <a href="#profile" class="nav-bar-item button" style="background: yellow;" 
-                    onclick="document.getElementById('registration-modal').style.display='block'" ><b>PROFILE</b></a>
-                </div> 
-            </div>
+          <!--Float to the very right. Different background-->
+          <a
+            href="#profile"
+            class="nav-bar-item button"
+            style="background: #F3DA0B;"
+            onclick="document.getElementById('registration-modal').style.display='block'"
+            ><b>PROFILE</b></a
+          >
         </div>
-        
-
-
-
-        <!-- Header -->
-        <header class="display-container content wide opacity-min-black" style="max-width:4000px;" id="home">
-            <img class="image" src="https://tinyurl.com/4p88aa6v" alt="Supprting Image" width="100%" height="100%">
-            <div class="display-middle margin-top center">
-                <h1 class="xxlarge text-white">
-                    <span class="padding  opacity-min"><b>Book Program Disccusion</b></span> 
-  
-                </h1>
-            </div>
-        </header>
-
-        <!--Page content-->
-        <div class="content padding" style="max-width:1564px">
-
-            <!--About section-->
-            <div class="container padding-32" id="about">
-                <h3 class="border-bottom border-light-grey padding-16">ABOUT</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-                  occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-
-            <!--News section-->
-            <div class="container padding-32" id="news">
-                <h3>NEWS</h3>
-            
-            
-            <div class="row-padding grayscale">
-                <div class="col l3 m6 margin-bottom">
-                  <img src="tai.jpg" alt="John" style="width:100%">
-                  <h3>John Doe</h3>
-                  <p class="opacity">CEO & Founder</p>
-                  <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                  <p><button class="button light-grey block">Contact</button></p>
-                </div>
-                <div class="col l3 m6 margin-bottom">
-                  <img src="tai.jpg" alt="Jane" style="width:100%">
-                  <h3>Jane Doe</h3>
-                  <p class="opacity">Architect</p>
-                  <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                  <p><button class="button light-grey block">Contact</button></p>
-                </div>
-                <div class="col l3 m6 margin-bottom">
-                  <img src="tai.jpg" alt="Mike" style="width:100%">
-                  <h3>Mike Ross</h3>
-                  <p class="opacity">Architect</p>
-                  <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                  <p><button class="button light-grey block">Contact</button></p>
-                </div>
-            </div>
-          </div>
-            
-
-          <!-- Contact Section -->
-        <div class="container padding-32" id="contact">
-            <h3 class="border-bottom border-light-grey padding-16">Contact</h3>
-            <p>
-                Lets get in touch and talk about your next project.<br>
-                <br>
-                Opening Hours:<br>
-                <br>
-                Monday to Friday, 9.00am - 5.00pm<br>
-                <br>
-                We also have an after-hours returns slot for Christchurch groups who are unable to drop books back during business hours. <br>
-                <br>
-                Email: bds@bds.org.nz<br>
-                Ph: 03 365 6210<br>
-                <br>
-                425 Colombo Street, Sydenham, Christchurch 8023<br>
-                PO Box 7126, Sydenham, Christchurch 8240, New Zealand<br>
-                <br>
-                Get Directions (opens Google Maps)
-            </p>
-
-            <form action="/action_page.php" target="_blank">
-            <input class="input border" type="text" placeholder="Name" required name="Name">
-            <input class="input section border" type="text" placeholder="Email" required name="Email">
-            <input class="input section border" type="text" placeholder="Subject" required name="Subject">
-            <input class="input section border" type="text" placeholder="Comment" required name="Comment">
-            <button class="button black section" type="submit">
-                <i class="fa fa-paper-plane"></i> SEND MESSAGE
-            </button>
-            </form>
-        </div>
-        
-        
+      </div>
     </div>
-        <footer class="center black padding-16">
-            <p><b>Book Program Discussion</b> &#169;copyright 2021</p>
 
-            <!--Subscribe List-->
-        </footer>
+    <!-- Header -->
+    <header
+      class="display-container content wide opacity-min-black"
+      style="max-width: 4000px"
+      id="home"
+    >
+      <img
+        class="image"
+        src="https://tinyurl.com/4p88aa6v"
+        alt="Supprting Image"
+        width="100%"
+        height="100%"
+      />
+      <div class="display-middle margin-top center">
+        <h1 class="xxlarge text-white">
+          <span class="padding opacity-min"
+            ><b>Book Program Disccusion</b></span
+          >
+        </h1>
+      </div>
+    </header>
 
-        <div id="registration-modal" class="modal">
-            <span onclick="document.getElementById('registration-modal').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <form class="modal-content" action="index.html">
-              <div class="container-form">
-                <h1>Sign Up</h1>
-                <p>Please fill in this form to register to BPD.</p>
-                <hr>
-                
-                <input type="text" placeholder="Enter First Name" name="given-name" required>
-          
-                
-                <input type="text" placeholder="Enter Last Name" name="last-name" required>
-                
-                
-                <input type="text" placeholder="Enter Username" name="username" required>
-          
-                
-                <input type="password" placeholder="Enter Password" name="password" required>
+    <!--Page content-->
+    <div class="content padding" style="max-width: 1564px">
+      <!--About section-->
+      <div class="container padding-32" id="about">
+        <h3 class="border-bottom border-light-grey padding-16">ABOUT</h3>
+        <p>
+          Book Discussion Scheme lends books & professionally prepared
+          discussion notes to book groups. Groups receive enough copies of their
+          selected title to allow everyone in the group to read the same book at
+          the same time.
+        </p>
+        <p>
+          We're a nationwide non-profit organisation with a 46-year track
+          record. We try to keep our membership costs affordable for everyone,
+          while offering a range of programmes and titles to suit a wide range
+          of reading tastes - from classics to the lastest page-turners. There's
+          1000+ fiction & non-fiction titles to choose from. We can help you
+          join an existing group, or you can register your group with us.
+        </p>
+      </div>
 
+      <!--News section-->
+      <div class="container padding-32" id="news">
+        <h3>NEWS</h3>
 
-
-                
-                
-                <input type="text" placeholder="Enter Home Address" name="home-address" required>
-
-                
-                <input type="text" placeholder="Enter Work Address" name="work-address" required>
-          
-                
-                <input type="text" placeholder="Enter Mobile Number" name="mobile-number" required>
-          
-                
-                <input type="text" placeholder="Enter Email" name="email" required>
-                
-                <label>
-                  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-                </label>
-          
-                <p>Or sign up with <a href="#" style="color:dodgerblue">Google</a> or <a href="#" style="color:dodgerblue">Facebook</a>.</p>
-          
-                <div class="clearfix">
-                  <button type="button" onclick="document.getElementById('registration-modal').style.display='none'" class="cancelbtn">Cancel</button>
-                  <button type="submit" class="signupbtn">Sign Up</button>
-                </div>
-              </div>
-            </form>
+        <div class="row-padding grayscale">
+          <div class="col l4 m7 margin-bottom" style="padding: 10px;">
+            <img src="news.jpg" alt="John" style="width: 100%"/>
+            <h2>LATEST NEWS</h3>
+            <p>
+              We're hosting a series of online and face-to-face events during
+              May designed specifically to bring together people interested in
+              starting, joining or growing book groups. If you...
+            </p>
+            <p><button class="button light-grey block">Find out more...</button></p>
           </div>
-        
-    </body>
+          
+          <div class="col l4 m7 margin-bottom" style="padding: 10px;">
+            <img src="books.jpg" alt="Jane" style="width: 100%" />
+            <h2>BOOKS</h3>
+            <p>
+              We have an extensive catalogue of fiction and non-fiction titles
+              available for loan. 
+            </p>
+            <p>
+              With 100s of titles to choose from - across a
+              range of genres and including classics to the latest reads.
+            </p>
+            <p><button class="button light-grey block">Find out more...</button></p>
+          </div>
+          
+          <div class="col l4 m7 margin-bottom" style="padding: 10px;">
+            <img src="involved.jpg" alt="Mike" style="width: 100%" />
+            <h2>GET INVOLVED</h3>
+            <p>
+              Meet new people... 
+            </p>
+            <p>
+              Experience new and interesting reading
+              adventures... 
+             </p>
+             <p> 
+              Whatever the reason you want to be part of a book
+              group, we can help.
+            </p>
+            <p><button class="button light-grey block">Find out more...</button></p>
+          </div>
+        </div>
+      </div>
 
+      <!-- Contact Section -->
+      <div class="container padding-32" id="contact">
+        <h3 class="border-bottom border-light-grey padding-16">Contact</h3>
+        <p>
+          Lets get in touch and talk about your next project.<br />
+          <br />
+          Opening Hours:<br />
+          <br />
+          Monday to Friday, 9.00am - 5.00pm<br />
+          <br />
+          We also have an after-hours returns slot for Christchurch groups who
+          are unable to drop books back during business hours. <br />
+          <br />
+          Email: bds@bds.org.nz<br />
+          Ph: 03 365 6210<br />
+          <br />
+          425 Colombo Street, Sydenham, Christchurch 8023<br />
+          PO Box 7126, Sydenham, Christchurch 8240, New Zealand<br />
+          <br />
+          Get Directions (opens Google Maps)
+        </p>
 
+        <form action="index.html" target="_blank">
+          <input
+            class="input border"
+            type="text"
+            placeholder="Name"
+            required
+            name="Name"
+          />
+          <input
+            class="input section border"
+            type="text"
+            placeholder="Email"
+            required
+            name="Email"
+          />
+          <input
+            class="input section border"
+            type="text"
+            placeholder="Subject"
+            required
+            name="Subject"
+          />
+          <input
+            class="input section border"
+            type="text"
+            placeholder="Comment"
+            required
+            name="Comment"
+          />
+          <button class="button black section" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </form>
+      </div>
+    </div>
+    <footer class="center black padding-16">
+      <p><b>Book Program Discussion</b> &#169;copyright 2021</p>
+    </footer>
 
+    <!--Registration Form-->
+    <div id="registration-modal" class="modal">
+      <span
+        onclick="document.getElementById('registration-modal').style.display='none'"
+        class="close"
+        title="Close Modal"
+        >&times;</span
+      >
+      <form class="modal-content" action="index.html">
+        <div class="container-form">
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to register to BPD.</p>
+          <hr />
 
+          <input
+            type="text"
+            placeholder="Enter First Name"
+            name="given-name"
+            required
+          />
+
+          <input
+            type="text"
+            placeholder="Enter Last Name"
+            name="last-name"
+            required
+          />
+
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="username"
+            required
+          />
+
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="password"
+            required
+          />
+
+          <input
+            type="text"
+            placeholder="Enter Home Address"
+            name="home-address"
+            required
+          />
+
+          <input
+            type="text"
+            placeholder="Enter Work Address"
+            name="work-address"
+            required
+          />
+
+          <input
+            type="text"
+            placeholder="Enter Mobile Number"
+            name="mobile-number"
+            required
+          />
+
+          <input type="text" placeholder="Enter Email" name="email" required />
+
+          <label>
+            <input
+              type="checkbox"
+              checked="checked"
+              name="remember"
+              style="margin-bottom: 15px"
+            />
+            Remember me
+          </label>
+
+          <p>
+            Or sign up with <a href="#" style="color: dodgerblue">Google</a> or
+            <a href="#" style="color: dodgerblue">Facebook</a>.
+          </p>
+
+          <div class="clearfix">
+            <button
+              type="button"
+              onclick="document.getElementById('registration-modal').style.display='none'"
+              class="cancelbtn"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
